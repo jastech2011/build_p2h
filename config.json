@@ -288,68 +288,67 @@
   "data": {
     "path": "markup",
     "source": [
-      { "matchValue": "git://github.com/iMarkup/grunt-base-template.git", "excludeIf": ["all"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-cms.git", "dependenciesAny": ["other_cms", "wp"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-wp.git", "dependenciesAll": ["wp"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-foundation.git", "dependenciesAny": ["foundation"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-materialize.git", "dependenciesAny": ["materialize"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["grunt"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["gulp"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["webpack"] }
+      { "matchValue": "https://github.com/jastech2011/markup/ template.git", "excludeIf": ["all"] },
+      { "matchValue": "https://github.com/jastech2011/markup/cms.git", "dependenciesAny": ["other_cms", "wp"] },
+      { "matchValue": "https://github.com/jastech2011/markup/wp.git", "dependenciesAll": ["wp"] },
+      { "matchValue": "https://github.com/jastech2011/markup/bootstrap.git", "dependenciesAny": ["bootstrap"] },
+      { "matchValue": "https://github.com/jastech2011/markup/foundation.git", "dependenciesAny": ["foundation"] },
+      { "matchValue": "https://github.com/jastech2011/markup/materialize.git", "dependenciesAny": ["materialize"] },
+      { "matchValue": "https://github.com/jastech2011/markup/magento-19.git", "dependenciesAny": ["magento"] },
+      { "matchValue": "https://github.com/jastech2011/markup/grunt.git", "dependenciesAny": ["grunt"] },
+      { "matchValue": "https://github.com/jastech2011/markup/gulp.git", "dependenciesAny": ["gulp"] },
+      { "matchValue": "https://github.com/jastech2011/markup/webpack.git", "dependenciesAny": ["webpack"] }
     ],
     "ignore": [
-      { "matchValue": "scss/main.scss", "dependenciesAny": ["wp", "magento"] },
+      { "matchValue": "src/scss/main.scss", "dependenciesAny": ["wp", "magento"] },
 
-      { "matchValue": "scss/main.scss", "dependenciesAny": ["foundation"] },
-      { "matchValue": "scss/base/_wp-reset.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
-      { "matchValue": "scss/style.scss", "dependenciesAny": ["foundation"] },
+      { "matchValue": "src/scss/main.scss", "dependenciesAny": ["foundation"] },
+      { "matchValue": "src/scss/base/_wp-reset.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "src/scss/style.scss", "dependenciesAny": ["foundation"] },
 
-      { "matchValue": "scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
-      { "matchValue": "scss/vendors/_include-media.scss", "dependenciesAny": ["foundation"] },
-      { "matchValue": "scss/base/_forms.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
-      { "matchValue": "scss/base/_functions.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
-      { "matchValue": "scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "src/scss/vendors/_normalize.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "src/scss/vendors/_include-media.scss", "dependenciesAny": ["foundation"] },
+      { "matchValue": "src/scss/base/_forms.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "src/scss/base/_functions.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "src/scss/base/_typography.scss", "dependenciesAny": ["foundation", "bootstrap", "materialize"] },
       
-      { "matchValue": "wp-bootstrap-index.html", "excludeIf": ["wp"] },
-      { "matchValue": "wp-elements-bootstrap.html", "excludeIf": ["wp"] },
-      { "matchValue": "wp-materialize-index.html", "excludeIf": ["wp"] },
-      { "matchValue": "scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
-      { "matchValue": "scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
-      { "matchValue": "scss/base/_variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
-      { "matchValue": "scss/base/_reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
+      { "matchValue": "src/wp-bootstrap-index.html", "excludeIf": ["wp"] },
+      { "matchValue": "src/wp-elements-bootstrap.html", "excludeIf": ["wp"] },
+      { "matchValue": "src/wp-materialize-index.html", "excludeIf": ["wp"] },
+      { "matchValue": "src/scss/wp-bootstrap-style.scss", "excludeIf": ["wp"] },
+      { "matchValue": "src/scss/base/_cms-reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
+      { "matchValue": "src/scss/base/_variables.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
+      { "matchValue": "src/scss/base/_reset.scss", "dependenciesAny":["bootstrap", "magento", "foundation", "materialize"] },
       
-      { "matchValue": "index.html", "dependenciesAll":["bootstrap", "wp"] },
-      { "matchValue": "index.html", "dependenciesAll":["materialize", "wp"] },
-      { "matchValue": "grunt-settings.js", "dependenciesAll":["materialize", "wp"] },
-      { "matchValue": "scss/app.scss", "dependenciesAll":["foundation", "wp"] },
-      { "matchValue": "wp-foundation-grunt-settings.js", "excludeIf": ["wp"] },
-      { "matchValue": "wp-foundation-index.html", "excludeIf": ["wp"] },
+      { "matchValue": "src/index.html", "dependenciesAll":["bootstrap", "wp"] },
+      { "matchValue": "src/index.html", "dependenciesAll":["materialize", "wp"] },
+      { "matchValue": "src/grunt-settings.js", "dependenciesAll":["materialize", "wp"] },
+      { "matchValue": "src/scss/app.scss", "dependenciesAll":["foundation", "wp"] },
+      { "matchValue": "src/wp-foundation-grunt-settings.js", "excludeIf": ["wp"] },
+      { "matchValue": "src/wp-foundation-index.html", "excludeIf": ["wp"] },
 
-      { "matchValue": "wp-materialize-grunt-settings.js", "excludeIf": ["wp"] },
-      { "matchValue": "wp-materialize-index.html", "excludeIf": ["wp"] },
+      { "matchValue": "src/wp-materialize-grunt-settings.js", "excludeIf": ["wp"] },
+      { "matchValue": "src/wp-materialize-index.html", "excludeIf": ["wp"] },
 
-      { "matchValue": "scss/base/_wp-reset-fw.scss", "excludeIf": ["foundation", "bootstrap", "materialize"] },
-      { "matchValue": "scss/wp-foundation-app.scss", "excludeIf": ["wp"] },
-      { "matchValue": "scss/wp-materialize-main.scss", "excludeIf": ["wp"] }
+      { "matchValue": "src/scss/base/_wp-reset-fw.scss", "excludeIf": ["foundation", "bootstrap", "materialize"] },
+      { "matchValue": "src/scss/wp-foundation-app.scss", "excludeIf": ["wp"] },
+      { "matchValue": "src/scss/wp-materialize-main.scss", "excludeIf": ["wp"] }
     ],
     "rename": [
-      { "matchValue": {"scss/wp-bootstrap-style.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
-      { "matchValue": {"wp-bootstrap-index.html":"index.html"}, "dependenciesAll": ["wp", "bootstrap"] },
-      { "matchValue": {"wp-elements-bootstrap.html":"elements-bootstrap.html"}, "dependenciesAll": ["wp", "bootstrap"] },
-      { "matchValue": {"wp-foundation-grunt-settings.js":"grunt-settings.js"}, "dependenciesAll": ["wp", "foundation"] },
-      { "matchValue": {"wp-foundation-index.html":"index.html"}, "dependenciesAll": ["wp", "foundation"] },
-      { "matchValue": {"scss/base/_wp-reset-fw.scss":"scss/base/_wp-reset.scss"}, "dependenciesAny": ["bootstrap", "foundation", "materialize"] },
-      { "matchValue": {"scss/wp-foundation-app.scss":"scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] },
-      { "matchValue": {"scss/wp-materialize-main.scss":"scss/style.scss"}, "dependenciesAll": ["wp", "materialize"] },
-      { "matchValue": {"wp-materialize-index.html":"index.html"}, "dependenciesAll": ["wp", "materialize"] },
-      { "matchValue": {"wp-materialize-grunt-settings.js":"grunt-settings.js"}, "dependenciesAll": ["wp", "materialize"] }
+      { "matchValue": {"src/scss/wp-bootstrap-style.scss":"src/scss/style.scss"}, "dependenciesAll": ["wp", "bootstrap"] },
+      { "matchValue": {"src/wp-bootstrap-index.html":"src/index.html"}, "dependenciesAll": ["wp", "bootstrap"] },
+      { "matchValue": {"src/wp-elements-bootstrap.html":"src/elements-bootstrap.html"}, "dependenciesAll": ["wp", "bootstrap"] },
+      { "matchValue": {"src/wp-foundation-grunt-settings.js":"src/grunt-settings.js"}, "dependenciesAll": ["wp", "foundation"] },
+      { "matchValue": {"src/wp-foundation-index.html":"src/index.html"}, "dependenciesAll": ["wp", "foundation"] },
+      { "matchValue": {"src/scss/base/_wp-reset-fw.scss":"src/scss/base/_wp-reset.scss"}, "dependenciesAny": ["bootstrap", "foundation", "materialize"] },
+      { "matchValue": {"src/scss/wp-foundation-app.scss":"src/scss/app.scss"}, "dependenciesAll": ["wp", "foundation"] },
+      { "matchValue": {"src/scss/wp-materialize-main.scss":"src/scss/style.scss"}, "dependenciesAll": ["wp", "materialize"] },
+      { "matchValue": {"src/wp-materialize-index.html":"src/index.html"}, "dependenciesAll": ["wp", "materialize"] },
+      { "matchValue": {"src/wp-materialize-grunt-settings.js":"src/grunt-settings.js"}, "dependenciesAll": ["wp", "materialize"] }
     ],
     "run": [
       { "matchValue": "bower install", "dependenciesAny": ["foundation", "materialize"] },
-      { "matchValue": "npm install" },
-      { "matchValue": "grunt" }
+      { "matchValue": "npm install" }
     ]
   }
 }
