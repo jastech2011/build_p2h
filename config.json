@@ -288,7 +288,7 @@
   "data": {
     "path": "markup",
     "source": [
-      { "matchValue": "https://github.com/jastech2011/markup/template.git", "excludeIf": ["all"] },
+      { "matchValue": "https://github.com/jastech2011/markup/base-template.git", "excludeIf": ["all"] },
       { "matchValue": "https://github.com/jastech2011/markup/cms.git", "dependenciesAny": ["other_cms", "wp"] },
       { "matchValue": "https://github.com/jastech2011/markup/wp.git", "dependenciesAll": ["wp"] },
       { "matchValue": "https://github.com/jastech2011/markup/bootstrap.git", "dependenciesAny": ["bootstrap"] },
