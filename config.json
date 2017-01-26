@@ -1,5 +1,5 @@
 {
-  "copyright": "\n********************************************\n* 2005–2016 All Rights Reserved., Inc. *\n********************************************\n",
+  "copyright": "\n******\n* 2017 All Rights Reserved., Inc. *\n******\n",
   "updateMenu": [
     {
       "question": "Select action:",
@@ -23,37 +23,14 @@
   ],
   "createMenu": [
     {
-      "question": "Select project type:",
-      "caption": "Markup Only",
-      "value": "markup_only",
+      "question": "Select the streaming build system:",
+      "caption": "Grunt",
+      "value": "grunt",
       "menu": [
         {
-          "question": "Select framework:",
-          "caption": "No framework",
-          "value": "no_framework"
-        },
-        {
-          "caption": "Bootstrap",
-          "value": "bootstrap"
-        },
-        {
-          "caption": "Zurb Foundation",
-          "value": "foundation"
-        },
-        {
-          "caption": "Materialize",
-          "value": "materialize"
-        }
-      ]
-    },
-    {
-      "caption": "Markup + CMS",
-      "value": "markup_cms",
-      "menu": [
-        {
-          "question": "Select CMS:",
-          "caption": "WordPress",
-          "value": "wp",
+          "question": "Select project type:",
+          "caption": "Markup Only",
+          "value": "markup_only",
           "menu": [
             {
               "question": "Select framework:",
@@ -75,12 +52,72 @@
           ]
         },
         {
-          "caption": "Magento",
-          "value": "magento"
-        },
+          "caption": "Markup + CMS",
+          "value": "markup_cms",
+          "menu": [
+            {
+              "question": "Select CMS:",
+              "caption": "WordPress",
+              "value": "wp",
+              "menu": [
+                {
+                  "question": "Select framework:",
+                  "caption": "No framework",
+                  "value": "no_framework"
+                },
+                {
+                  "caption": "Bootstrap",
+                  "value": "bootstrap"
+                },
+                {
+                  "caption": "Zurb Foundation",
+                  "value": "foundation"
+                },
+                {
+                  "caption": "Materialize",
+                  "value": "materialize"
+                }
+              ]
+            },
+            {
+              "caption": "Magento",
+              "value": "magento"
+            },
+            {
+              "caption": "Other CMS",
+              "value": "other_cms",
+              "menu": [
+                {
+                  "question": "Select framework:",
+                  "caption": "No framework",
+                  "value": "no_framework"
+                },
+                {
+                  "caption": "Bootstrap",
+                  "value": "bootstrap"
+                },
+                {
+                  "caption": "Zurb Foundation",
+                  "value": "foundation"
+                },
+                {
+                  "caption": "Materialize",
+                  "value": "materialize"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "caption": "Gulp",
+      "value": "gulp",
+       "menu": [
         {
-          "caption": "Other CMS",
-          "value": "other_cms",
+          "question": "Select project type:",
+          "caption": "Markup Only",
+          "value": "markup_only",
           "menu": [
             {
               "question": "Select framework:",
@@ -98,6 +135,150 @@
             {
               "caption": "Materialize",
               "value": "materialize"
+            }
+          ]
+        },
+        {
+          "caption": "Markup + CMS",
+          "value": "markup_cms",
+          "menu": [
+            {
+              "question": "Select CMS:",
+              "caption": "WordPress",
+              "value": "wp",
+              "menu": [
+                {
+                  "question": "Select framework:",
+                  "caption": "No framework",
+                  "value": "no_framework"
+                },
+                {
+                  "caption": "Bootstrap",
+                  "value": "bootstrap"
+                },
+                {
+                  "caption": "Zurb Foundation",
+                  "value": "foundation"
+                },
+                {
+                  "caption": "Materialize",
+                  "value": "materialize"
+                }
+              ]
+            },
+            {
+              "caption": "Magento",
+              "value": "magento"
+            },
+            {
+              "caption": "Other CMS",
+              "value": "other_cms",
+              "menu": [
+                {
+                  "question": "Select framework:",
+                  "caption": "No framework",
+                  "value": "no_framework"
+                },
+                {
+                  "caption": "Bootstrap",
+                  "value": "bootstrap"
+                },
+                {
+                  "caption": "Zurb Foundation",
+                  "value": "foundation"
+                },
+                {
+                  "caption": "Materialize",
+                  "value": "materialize"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "caption": "Webpack",
+      "value": "webpack",
+       "menu": [
+        {
+          "question": "Select project type:",
+          "caption": "Markup Only",
+          "value": "markup_only",
+          "menu": [
+            {
+              "question": "Select framework:",
+              "caption": "No framework",
+              "value": "no_framework"
+            },
+            {
+              "caption": "Bootstrap",
+              "value": "bootstrap"
+            },
+            {
+              "caption": "Zurb Foundation",
+              "value": "foundation"
+            },
+            {
+              "caption": "Materialize",
+              "value": "materialize"
+            }
+          ]
+        },
+        {
+          "caption": "Markup + CMS",
+          "value": "markup_cms",
+          "menu": [
+            {
+              "question": "Select CMS:",
+              "caption": "WordPress",
+              "value": "wp",
+              "menu": [
+                {
+                  "question": "Select framework:",
+                  "caption": "No framework",
+                  "value": "no_framework"
+                },
+                {
+                  "caption": "Bootstrap",
+                  "value": "bootstrap"
+                },
+                {
+                  "caption": "Zurb Foundation",
+                  "value": "foundation"
+                },
+                {
+                  "caption": "Materialize",
+                  "value": "materialize"
+                }
+              ]
+            },
+            {
+              "caption": "Magento",
+              "value": "magento"
+            },
+            {
+              "caption": "Other CMS",
+              "value": "other_cms",
+              "menu": [
+                {
+                  "question": "Select framework:",
+                  "caption": "No framework",
+                  "value": "no_framework"
+                },
+                {
+                  "caption": "Bootstrap",
+                  "value": "bootstrap"
+                },
+                {
+                  "caption": "Zurb Foundation",
+                  "value": "foundation"
+                },
+                {
+                  "caption": "Materialize",
+                  "value": "materialize"
+                }
+              ]
             }
           ]
         }
@@ -113,7 +294,10 @@
       { "matchValue": "git://github.com/iMarkup/grunt-add-bootstrap.git", "dependenciesAny": ["bootstrap"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-foundation.git", "dependenciesAny": ["foundation"] },
       { "matchValue": "git://github.com/iMarkup/grunt-add-materialize.git", "dependenciesAny": ["materialize"] },
-      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] }
+      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["magento"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["grunt"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["gulp"] },
+      { "matchValue": "git://github.com/iMarkup/grunt-add-magento-19.git", "dependenciesAny": ["webpack"] }
     ],
     "ignore": [
       { "matchValue": "scss/main.scss", "dependenciesAny": ["wp", "magento"] },
