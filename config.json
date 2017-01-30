@@ -288,16 +288,16 @@
   "data": {
     "path": "markup",
     "source": [
-      { "matchValue": "https://github.com/jastech2011/markup.git/base-template", "excludeIf": ["all"] },
-      { "matchValue": "https://github.com/jastech2011/markup/cms.git", "dependenciesAny": ["other_cms", "wp"] },
-      { "matchValue": "https://github.com/jastech2011/markup/wp.git", "dependenciesAll": ["wp"] },
-      { "matchValue": "https://github.com/jastech2011/markup/bootstrap.git", "dependenciesAny": ["bootstrap"] },
-      { "matchValue": "https://github.com/jastech2011/markup/foundation.git", "dependenciesAny": ["foundation"] },
-      { "matchValue": "https://github.com/jastech2011/markup/materialize.git", "dependenciesAny": ["materialize"] },
-      { "matchValue": "https://github.com/jastech2011/markup/magento-19.git", "dependenciesAny": ["magento"] },
-      { "matchValue": "https://github.com/jastech2011/markup/grunt.git", "dependenciesAny": ["grunt"] },
-      { "matchValue": "https://github.com/jastech2011/markup/gulp.git", "dependenciesAny": ["gulp"] },
-      { "matchValue": "https://github.com/jastech2011/markup/webpack.git", "dependenciesAny": ["webpack"] }
+      { "matchValue": "https://github.com/jastech2011/markup.git base-template", "excludeIf": ["all"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git cms", "dependenciesAny": ["other_cms", "wp"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git wp", "dependenciesAll": ["wp"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git bootstrap", "dependenciesAny": ["bootstrap"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git foundation", "dependenciesAny": ["foundation"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git materialize", "dependenciesAny": ["materialize"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git magento-19", "dependenciesAny": ["magento"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git grunt", "dependenciesAny": ["grunt"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git gulp", "dependenciesAny": ["gulp"] },
+      { "matchValue": "https://github.com/jastech2011/markup.git webpack", "dependenciesAny": ["webpack"] }
     ],
     "ignore": [
       { "matchValue": "src/scss/main.scss", "dependenciesAny": ["wp", "magento"] },
